@@ -8,7 +8,10 @@ const productos = [
   {nombre: "Zapato rojo", tipo: "zapato", color: "rojo", img: "./zapato-rojo.jpg"}
 ]
 
-const li = document.getElementsByName("lista-de-productos")
+const li = document.getElementById("lista-de-productos")
+// Se intercambia getElementsByName por un getElementById
+
+
 const $i = document.querySelector('.input');
 
 for (let i = 0; i < productos.length; i++) {
@@ -27,7 +30,7 @@ for (let i = 0; i < productos.length; i++) {
 
   li.appendChild(d)
 }
-
+// displayProductos es una function no definida
 displayProductos(productos)
 const botonDeFiltro = document.querySelector("button");
 
